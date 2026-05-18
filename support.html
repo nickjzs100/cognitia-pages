@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitia Support</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #13233d;
+      --muted: #5b6b80;
+      --accent: #1f6fe5;
+      --border: #d9e2ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #edf4ff 0%, var(--bg) 40%, #eef2f8 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #163d76 0%, #2459b8 55%, #3a86ff 100%);
+      color: white;
+      border-radius: 24px;
+      padding: 32px 28px;
+      box-shadow: 0 18px 40px rgba(22, 61, 118, 0.18);
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.05;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 680px;
+      font-size: 1.05rem;
+      opacity: 0.95;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px 20px;
+      box-shadow: 0 8px 24px rgba(19, 35, 61, 0.06);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    h3 {
+      margin: 24px 0 8px;
+      font-size: 1.05rem;
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    .section {
+      margin-top: 22px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding: 18px 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="pill">Cognitia Support</div>
+      <h1>Practice smarter by listening, speaking, and reviewing.</h1>
+      <p>Cognitia is a study app for iPhone and iPad that helps you practice history, geography, and science questions with spoken reading, microphone answers, and flexible round controls.</p>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What Cognitia Does</h2>
+        <ul>
+          <li>Practice history, geography, and science questions</li>
+          <li>Listen to questions read aloud</li>
+          <li>Answer by microphone</li>
+          <li>Reveal or cover clues as you practice</li>
+          <li>Track score during a round</li>
+          <li>Import your own text packets from the Files app</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Supported Devices</h2>
+        <ul>
+          <li>iPhone</li>
+          <li>iPad</li>
+          <li>Recommended: iOS/iPadOS 17.0 or later</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section card">
+      <h2>Troubleshooting</h2>
+
+      <h3>Microphone does not work</h3>
+      <ul>
+        <li>Make sure you tapped <strong>Answer by Mic</strong>.</li>
+        <li>Allow microphone access in <strong>Settings &gt; Privacy &amp; Security &gt; Microphone</strong>.</li>
+        <li>Allow speech recognition in <strong>Settings &gt; Privacy &amp; Security &gt; Speech Recognition</strong>.</li>
+        <li>Confirm the device has a working network connection if Apple speech services are needed by the system.</li>
+      </ul>
+
+      <h3>Packet import does not work</h3>
+      <ul>
+        <li>Make sure the file is plain text.</li>
+        <li>Select the file through the system Files picker.</li>
+        <li>Check that the packet text is in the format expected by Cognitia.</li>
+      </ul>
+
+      <h3>Question reading does not play</h3>
+      <ul>
+        <li>Turn the device volume up.</li>
+        <li>Make sure the device is not muted.</li>
+        <li>Tap <strong>Start Reading</strong>.</li>
+      </ul>
+    </section>
+
+    <section class="section grid">
+      <article class="card">
+        <h2>Support Contact</h2>
+        <p>Replace the placeholder below before publishing:</p>
+        <p><a href="mailto:cognitiaiac@gmail.com">cognitiaiac@gmail.com</a></p>
+      </article>
+
+      <article class="card">
+        <h2>Privacy Policy</h2>
+        <p>Publish the matching privacy page alongside this support page and link it in App Store Connect.</p>
+        <p><a href="./privacy.html">View Privacy Policy</a></p>
+      </article>
+    </section>
+
+    <div class="footer">
+      Last updated: May 18, 2026
+    </div>
+  </main>
+</body>
+</html>
