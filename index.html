@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitia</title>
+  <style>
+    :root {
+      --bg: #f4f7fc;
+      --card: #ffffff;
+      --text: #13233d;
+      --muted: #5b6b80;
+      --accent: #1f6fe5;
+      --accent-dark: #163d76;
+      --border: #d9e2ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #e9f2ff 0%, #f4f7fc 45%, #eef2f8 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #163d76 0%, #2459b8 55%, #3a86ff 100%);
+      color: white;
+      border-radius: 28px;
+      padding: 40px 30px;
+      box-shadow: 0 20px 42px rgba(22, 61, 118, 0.18);
+    }
+
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      line-height: 1.02;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 700px;
+      font-size: 1.08rem;
+      opacity: 0.96;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.16s ease, opacity 0.16s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      opacity: 0.95;
+    }
+
+    .button-primary {
+      background: white;
+      color: var(--accent-dark);
+    }
+
+    .button-secondary {
+      background: rgba(255, 255, 255, 0.14);
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 22px 20px;
+      box-shadow: 0 8px 24px rgba(19, 35, 61, 0.06);
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    p, li {
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Cognitia</h1>
+      <p>An educational practice app for iPhone and iPad with spoken question reading, microphone answers, packet import, and focused solo study across history, geography, and science.</p>
+      <div class="actions">
+        <a class="button button-primary" href="./support.html">Support</a>
+        <a class="button button-secondary" href="./privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>What It Does</h2>
+        <ul>
+          <li>Reads questions aloud</li>
+          <li>Lets you answer by microphone</li>
+          <li>Tracks score during each round</li>
+          <li>Supports packet import from the Files app</li>
+          <li>Includes built-in history, geography, and science sets</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Links</h2>
+        <p><a href="./support.html">Support Page</a></p>
+        <p><a href="./privacy.html">Privacy Policy</a></p>
+        <p><a href="mailto:cognitiaiac@gmail.com">cognitiaiac@gmail.com</a></p>
+      </article>
+    </section>
+
+    <div class="footer">
+      Last updated: May 18, 2026
+    </div>
+  </main>
+</body>
+</html>
